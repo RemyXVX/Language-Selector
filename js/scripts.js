@@ -6,13 +6,13 @@ window.addEventListener("load", function() {
 
   form.addEventListener("submit", function(event) {
 
-    const question1 = parseInt(document.querySelector("#input[name='question']:checked").value);
-    const question2 = parseInt(document.querySelector("#input[name='questionA']:checked").value);
-    const question3 = parseInt(document.querySelector("#input[name='questionB']:checked").value);
-    const question4 = parseInt(document.querySelector("#input[name='questionC']:checked").value);
-    const question5 = parseInt(document.querySelector("#input[name='questionD']:checked").value);
+    const question = parseInt(document.querySelector("#input[name='question']:checked").value);
+    const questionA = parseInt(document.querySelector("#input[name='questionA']:checked").value);
+    const questionB = parseInt(document.querySelector("#input[name='questionB']:checked").value);
+    const questionC = parseInt(document.querySelector("#input[name='questionC']:checked").value);
+    const questionD = parseInt(document.querySelector("#input[name='questionD']:checked").value);
 
-    let result = question1 + question2 + question3 + question4 + question5
+    let result = question + questionA + questionB + questionC + questionD
 
     if (result === 1) {
       document.getElementById("resultJavascript");
