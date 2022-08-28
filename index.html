@@ -6,47 +6,92 @@
   <title>Programming Language Suggester</title>
 </head>
 <body>
-  <div id="intro">
-    <h1>Coding; the langauges of the Robots</h1>
-    <p>have you thought about learning a new language that most don't understand but use all of the time?<br>
-    How about a language that can transform the way a world see information?<br>
-    Well this is the place to start that adventure into what coding language can best suit you!</p>
+
+  <div id="container">
+    <div id="header1">
+      <h1>Coding: the langauges of the Robots</h1>
+      <p>Have you thought about learning a new language that most don't understand but use all of the time?<br>
+      How about a language that can transform the way a world see information?<br>
+      Well this is the place to start that adventure into what coding language can best suit you!</p>
+    </div>
+
+    <div id="header2">
+      <h2>What robo language suits you:</h2>
+      <div id="quiz">
+        <form id="questions" class="questions1">
+          <ol>
+            <li id="question1">Are you artistic and love to given personal touches?<br>
+              <input type="radio" name="question" id="questionyes" value="1">
+              <label for="questionyes" class="afterradio">Yes</label>
+              <input type="radio" name="question" id="questionno" value="0">
+              <label for="questionno" class="afterradio">No</label>
+            </li>
+            <br>
+            <br>
+            <li id="question2">Does a cold office with no windows seems like a dream?<br>
+              <input type="radio" name="questionA" id="questionyes" value="1">
+              <label for="questionyes" class="afterradio">Yes</label>
+              <input type="radio" name="questionA" id="questionno" value="0">
+              <label for="questionno" class="afterradio">No</label>
+            </li>
+            <br>
+            <br>
+            <li id="question3">Is simplicity something you strive for?<br>
+              <input type="radio" name="questionB" id="questionyes" value="1">
+              <label for="questionyes" class="afterradio">Yes</label>
+              <input type="radio" name="questionB" id="questionno" value="0">
+              <label for="questionno" class="afterradio">No</label>
+            </li>
+            <br>
+            <br>
+            <li id="question4">Do you like to see how evolution can make things easier?<br>
+              <input type="radio" name="questionC" id="questionyes" value="1">
+              <label for="questionyes" class="afterradio">Yes</label>
+              <input type="radio" name="questionC" id="questionno" value="0">
+              <label for="questionno" class="afterradio">No</label>
+            </li>
+            <br>
+            <br>
+            <li id="question5">Are cults cool to you?<br>
+              <input type="radio" name="questionD" id="questionyes" value="1">
+              <label for="questionyes" class="after_radio">Yes</label>
+              <input type="radio" name="questionD" id="questionno" value="0">
+              <label for="questionno" class="afterradio">No</label>
+            </li>
+            <br>
+          </ol>
+          <button id="button" type="submit" class="boom">Submit submit</button>
+          <button id="button" type="reset" class="boom">Try again</button>
+        </form>
+      </div>
+    </div>
   </div>
 
-  <div id="questions"></div>
-    <h2>What robo language suits you:</h2>
-    <ol>
-      <li id="question1">Are you artistic and love to given personal touches?</li>
-      <input type="radio" name="question" id="questionyes" value="1">
-      <label for="questionyes" class="afterradio">Yes</label>
-      <input type="radio" name="questions" id="questionno" value="0">
-      <label for="questionno" class="afterradio">No</label>
-
-      <li id="question2">Does a cold office with no windows seems like a dream?</li>
-      <input type="radio" name="question" id="questionyes" value="1">
-      <label for="questionyes" class="after_radio">Yes</label>
-      <input type="radio" name="question" id="questiosno" value="0">
-      <label for="questionno" class="afterradio">No</label>
-
-      <li id="question3">Is simplicity something you strive for?</li>
-      <input type="radio" name="question" id="questionyes" value="1">
-      <label for="questionyes" class="afterradio">Yes</label>
-      <input type="radio" name="question" id="questionno" value="0">
-      <label for="questionno" class="afterradio">No</label>
-
-      <li id="question4">Do you like to see how evolution can make things easier?</li>
-      <input type="radio" name="question" id="questionyes" value="1">
-      <label for="questionyes" class="afterradio">Yes</label>
-      <input type="radio" name="question" id="questionno" value="0">
-      <label for="questionno" class="afterradio">No</label>
-
-      <li id="question5">Are cults cool to you?</li>
-      <input type="radio" name="question" id="questionyes" value="1">
-      <label for="questionyes" class="after_radio">Yes</label>
-      <input type="radio" name="the_question" id="questionno" value="0">
-      <label for="questionno" class="afterradio">No</label>
-    </ol>
+  <div id="container">
+    <div id="answers" class="hidden">
+      <h2>the robot langauge that best suits you is:</h2>
+      <div id="resultRuby" class="hidden">
+        <h3>Ruby:</h3>
+        <p>Ruby seems to be what you're keen for!</p>
+      </div>
+      <div id="resultJavaScript" class="hidden">
+        <h3>JavaScript:</h3>
+        <p>JavaScript can color your world.</p>
+      </div>
+      <div id="resultPython" class="hidden">
+        <h3>Python:</h3>
+        <p>Enjoy your cave with Python!</p>
+      </div>
+      <div id="resultC" class="hidden">
+        <h3>C#:</h3>
+        <p>Good o' realiable C#.</p>
+      </div>
+      <div id="resultSwift" class="hidden">
+        <h3>Swift:</h3>
+        <p>Join the reprograming with Swift!</p>
+      </div>
+    </div>
   </div>
-  
+
 </body>
 </html>
