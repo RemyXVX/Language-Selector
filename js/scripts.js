@@ -1,7 +1,7 @@
 window.addEventListener("load", function() {
 
   const form = document.querySelector("form");
-  let resetBtn = document.getElementById("reset");
+  let resetBtn = document.getElementById("rst");
   let answer = document.getElementById("answers");
   let submit = document.getElementById("submit1")
 
@@ -9,30 +9,30 @@ window.addEventListener("load", function() {
     answer.removeAttribute("class");
     event.preventDefault();
 
-    const questionA = parseInt(document.querySelector("input[name='questionA']:checked").value);
+    let questionA = parseInt(document.querySelector("input[name='questionA']:checked").value);
     console.log(questionA);
-    const questionB = parseInt(document.querySelector("input[name='questionB']:checked").value);
+    let questionB = parseInt(document.querySelector("input[name='questionB']:checked").value);
     console.log(questionB);
-    const questionC = parseInt(document.querySelector("input[name='questionC']:checked").value);
+    let questionC = parseInt(document.querySelector("input[name='questionC']:checked").value);
     console.log(questionC);
-    const questionD = parseInt(document.querySelector("input[name='questionD']:checked").value);
+    let questionD = parseInt(document.querySelector("input[name='questionD']:checked").value);
     console.log(questionD);
-    const questionE = parseInt(document.querySelector("input[name='questionE']:checked").value);
+    let questionE = parseInt(document.querySelector("input[name='questionE']:checked").value);
     console.log(questionE);
 
     let result = questionA + questionB + questionC + questionD + questionE
 
-    if (result = 1) {
+    if (result === 1) {
       document.getElementById("resultJavascript").removeAttribute("class");
-    } else if (result = 2) {
+    } if (result === 2) {
       document.getElementById("resultPython").removeAttribute("class");
-    } else if (result = 3) {
+    } if (result === 3) {
       document.getElementById("resultC").removeAttribute("class");
-    } else if (result = 4) {
+    } if (result === 4) {
       document.getElementById("resultRuby").removeAttribute("class");
-    } else if (result = 5) {
+    } if (result === 5) {
       document.getElementById("resultSwift").removeAttribute("class");
-    } else if (result = 0) {
+    } if (result === 0) {
       document.getElementById("resultNone").removeAttribute("class");
     };
   });
