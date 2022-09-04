@@ -1,11 +1,11 @@
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
 
   const form = document.querySelector("form");
   let resetBtn = document.getElementById("rst");
   let answer = document.getElementById("answers");
   let submit = document.getElementById("submit1")
 
-  form.addEventListener("submit", function(event) {
+  form.addEventListener("submit", function (event) {
     answer.removeAttribute("class");
     event.preventDefault();
 
@@ -23,30 +23,35 @@ window.addEventListener("load", function() {
     let result = questionA + questionB + questionC + questionD + questionE
 
     if (result === 1) {
-      document.getElementById("resultJavascript").removeAttribute("class");
-    } if (result === 2) {
+      document.getElementById("resultJavaScript").removeAttribute("class");
+    } else if (result === 2) {
       document.getElementById("resultPython").removeAttribute("class");
-    } if (result === 3) {
+    } else if (result === 3) {
       document.getElementById("resultC").removeAttribute("class");
-    } if (result === 4) {
+    } else if (result === 4) {
       document.getElementById("resultRuby").removeAttribute("class");
-    } if (result === 5) {
+    } else if (result === 5) {
       document.getElementById("resultSwift").removeAttribute("class");
-    } if (result === 0) {
+    } else if (result === 0) {
       document.getElementById("resultNone").removeAttribute("class");
     };
   });
 
-  form.addEventListener("submit", function() {
+  form.addEventListener("submit", function () {
     resetBtn.removeAttribute("class");
   });
 
-  resetBtn.addEventListener("click", function() {
+  resetBtn.addEventListener("click", function (btnReset) {
     answer.setAttribute("class", "hidden");
-    document.getElementById("questionA").value = null;
-    document.getElementById("questionB").value = null;
-    document.getElementById("questionC").value = null;
-    document.getElementById("questionD").value = null;
-    document.getElementById("questionE").value = null;
+    location.reload()
+
+    /*function btnReset() {
+      parseInt(document.getElementById("questionYes").value) = " ";
+      parseInt(document.getElementById("questionNo").value) = " ";
+    };
+    parseInt(document.querySelector("input[name='questionB']").value) = " ";
+    parseInt(document.querySelector("input[name='questionC']").value) = " ";
+    parseInt(document.querySelector("input[name='questionD']").value) = " ";
+    parseInt(document.querySelector("input[name='questionE']").value) = " ";*/
   });
 });
