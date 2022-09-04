@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="css1/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/scripts.js"></script>
   <title>Programming Language Suggester</title>
@@ -22,14 +22,6 @@
         <form id="questions" class="questions1">
           <ol>
             <li id="question1">Are you artistic and love to given personal touches?<br>
-              <input type="radio" name="question" id="questionyes" value="1">
-              <label for="questionyes" class="afterradio">Yes</label>
-              <input type="radio" name="question" id="questionno" value="0">
-              <label for="questionno" class="afterradio">No</label>
-            </li>
-            <br>
-            <br>
-            <li id="question2">Does a cold office with no windows seems like a dream?<br>
               <input type="radio" name="questionA" id="questionyes" value="1">
               <label for="questionyes" class="afterradio">Yes</label>
               <input type="radio" name="questionA" id="questionno" value="0">
@@ -37,7 +29,7 @@
             </li>
             <br>
             <br>
-            <li id="question3">Is simplicity something you strive for?<br>
+            <li id="question2">Does a cold office with no windows seems like a dream?<br>
               <input type="radio" name="questionB" id="questionyes" value="1">
               <label for="questionyes" class="afterradio">Yes</label>
               <input type="radio" name="questionB" id="questionno" value="0">
@@ -45,7 +37,7 @@
             </li>
             <br>
             <br>
-            <li id="question4">Do you like to see how evolution can make things easier?<br>
+            <li id="question3">Is simplicity something you strive for?<br>
               <input type="radio" name="questionC" id="questionyes" value="1">
               <label for="questionyes" class="afterradio">Yes</label>
               <input type="radio" name="questionC" id="questionno" value="0">
@@ -53,15 +45,23 @@
             </li>
             <br>
             <br>
-            <li id="question5">Are cults cool to you?<br>
+            <li id="question4">Do you like to see how evolution can make things easier?<br>
               <input type="radio" name="questionD" id="questionyes" value="1">
-              <label for="questionyes" class="after_radio">Yes</label>
+              <label for="questionyes" class="afterradio">Yes</label>
               <input type="radio" name="questionD" id="questionno" value="0">
               <label for="questionno" class="afterradio">No</label>
             </li>
             <br>
+            <br>
+            <li id="question5">Are cults cool to you?<br>
+              <input type="radio" name="questionE" id="questionyes" value="1">
+              <label for="questionyes" class="after_radio">Yes</label>
+              <input type="radio" name="questionE" id="questionno" value="0">
+              <label for="questionno" class="afterradio">No</label>
+            </li>
+            <br>
           </ol>
-          <button type="submit">Submit submit</button>
+          <button id="submit1" type="submit">Submit submit</button>
           <button type="button" class="hidden" id="reset">Reset</button>  
         </form>
       </div>
@@ -70,7 +70,7 @@
 
   <div class="contain1" id="container">
     <div id="answers" class="hidden">
-      <h2>the robot langauge that best suits you is:</h2>
+      <h2>The robot langauge that best suits you is:</h2>
       <div id="resultRuby" class="hidden">
         <h3>Ruby:</h3>
         <p>Ruby seems to be what you're keen for!</p>
@@ -90,6 +90,9 @@
       <div id="resultSwift" class="hidden">
         <h3>Swift:</h3>
         <p>Join the reprograming with Swift!</p>
+      </div>
+      <div id="resultNone" class="hidden">
+        <h3>Why are you here?</h3>
       </div>
     </div>
   </div>
