@@ -3,9 +3,14 @@
 }
 
 body {
-  background-color: rgba(238, 238, 221, 0.596);
+  background-color: rgba(216, 207, 201, 0.712);
   font-size: medium;
   margin: 15px;
+}
+
+.innerbody {
+  margin: 45px;
+  background-color: rgb(245, 244, 235);
   border-top: 15px solid rgb(24, 23, 24);
   border-bottom: 15px solid rgb(17, 17, 17);
   border-right: 25px solid pink;
@@ -21,12 +26,13 @@ form {
 .roboface {
   float: right;
   border-left: 1px solid black;
-  padding-left: 115px;
+  padding-left: 95px;
   padding-bottom: 20px;
+  padding-right: 15px;
   width: 95%;
   height: 95%;
   object-fit: fill;
-  opacity: 87%;
+  opacity: 89%;
 }
 
 h1 {

@@ -47,6 +47,7 @@ window.addEventListener("load", function () {
 
     /*
     Currently still looking into a alternative solution that will clear out all the values on the form so the asnwer doesn't stay after a "reset".
+    
     function btnReset() {
       parseInt(document.getElementById("questionYes").value) = " ";
       parseInt(document.getElementById("questionNo").value) = " ";
